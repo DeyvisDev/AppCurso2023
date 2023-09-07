@@ -6,10 +6,24 @@ fun main(){
     //edad(25)
     var nombre:String = "Deyvis"
     mostrarminombre(nombre)
+    showMyAge(25)
+    val resta = subtrak(40,20)
+    val suma = add(15,5)
+    print(resta.toString() +" "+ suma.toString())
 
 }
+fun add(n1:Int,n2:Int):Int{
+    var suma = n1+n2
+    return suma
+}
+fun subtrak(n1:Int,n2:Int):Int{
+    return n1-n2
+
+}
+fun showMyAge(age:Int) {
+    println("My age is $age")
+}
 fun mostrarminombre(nombre:String){
-    nombre
     println("My name is $nombre")
 }
 fun edad(int: Int){
