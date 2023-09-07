@@ -14,6 +14,11 @@ fun ifBasico()
         println("El nombre si es david")
     }
 }
-fun ifAnidado(){
-
+fun ifBoolean(){
+    var imhappy = true
+    //sin nada es true
+    //con ! al inicio es false
+    if (imhappy){
+        println("soy feliz")
+    }
 }
