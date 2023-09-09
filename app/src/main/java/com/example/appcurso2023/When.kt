@@ -1,8 +1,14 @@
 package com.example.appcurso2023
 
 fun main(){
-    getMonth(10)
-    getTrimestre(4)
+    result(true)
+}
+fun result(value:Any){
+    when (value){
+        is Int -> value + value
+        is String -> println(value)
+        is Boolean -> if (value) println("YIYiS")
+    }
 }
 fun getMonth(month:Int){
     when(month){
@@ -34,10 +40,12 @@ fun getTrimestre(month: Int){
         else -> println("No es un trimestre valido")
     }
 }
-fun getTSemestre(month: Int){
-    when(month){
-        in 1..6-> println("Primer Semestre")
-        in 7..12-> println("Segundo Semestre")
-        else -> println("Semestre no valido")
+fun getTSemestre(month: Int):String{
+    return when(month){
+        in 1..6-> "Primer Semestre"
+        in 7..12->  "Segundo Semestre"
+        !in 1..12 ->  "Semestre no valido"
+        else -> "No se sabe"
     }
+
 }
