@@ -34,3 +34,10 @@ fun getTrimestre(month: Int){
         else -> println("No es un trimestre valido")
     }
 }
+fun getTSemestre(month: Int){
+    when(month){
+        in 1..6-> println("Primer Semestre")
+        in 7..12-> println("Segundo Semestre")
+        else -> println("Semestre no valido")
+    }
+}
