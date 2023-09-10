@@ -44,6 +44,7 @@ fun mutableList(){
         weekDays.forEach { println(it) }
     }
 
+
     //mostrar ultomo
     weekDays.last()
 
@@ -57,4 +58,6 @@ fun mutableList(){
     weekDays.forEach{
         println(it)
     }
+
+
 }
