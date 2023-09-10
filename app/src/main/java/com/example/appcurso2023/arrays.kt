@@ -15,8 +15,17 @@ fun main(){
     weekDays[0]= "Lunes"
     println(weekDays[0])
     //bucles paora arrays
+    //forma 1
     for (position in weekDays.indices){
         println(weekDays[position])
+    }
+    //forma 2
+    for ((position,value) in weekDays.withIndex()){
+        println("la posicion $position, contiene $value")
+    }
+    //forma 3
+    for (weekDay in weekDays){
+        println("Ahora es: $weekDay")
     }
 
 
