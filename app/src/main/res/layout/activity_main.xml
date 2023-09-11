@@ -7,23 +7,19 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <View
-        android:id="@+id/view1"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:background="@color/teal_200"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="yiyis"
+        android:textSize="50dp"
+        android:textColor="@color/purple_200"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
-    <View
-        android:id="@+id/view2"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:background="@color/purple_200"
-        app:layout_constraintStart_toEndOf="@+id/view1"
-        app:layout_constraintBottom_toTopOf="@+id/view1"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
