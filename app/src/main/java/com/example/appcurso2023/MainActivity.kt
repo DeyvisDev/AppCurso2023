@@ -1,5 +1,6 @@
 package com.example.appcurso2023
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -18,7 +19,13 @@ class MainActivity : AppCompatActivity() {
 
         btnStar.setOnClickListener{
             name = edittextname.text.toString()
-            Log.i("msg","Pulsaste el Boton $name")
+            if  (name.isNotEmpty()){
+                val intent = Intent(this,ReultActivity::class.java)
+                intent.putExtra("extraName",name)
+                startActivity(intent)
+
+            }
+
 
         }
 
